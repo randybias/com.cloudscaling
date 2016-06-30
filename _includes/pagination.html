@@ -1,5 +1,6 @@
 {% capture homepage %}{{ page.url | slugify  }}{% endcapture %}
 
+<pre>pagination.html</pre>
 <div class="pagination-wrapper {% if paginator.previous_page or  page.previous.url %} multiple-pagination {% endif %}">
 
 	{% if homepage != "blog-index-html" %}
@@ -17,7 +18,7 @@
 			{% if page.next.url %}
 			<div class="pagination">
 				<a class="next" href="{{page.next.url}}">
-					<span class="label">Next Post</span> {{page.next.title | truncate 40}} 
+					<span class="label">Next Post</span> {{page.next.title | truncate 40}}
 				</a>
 			</div>
 			{% endif %}
