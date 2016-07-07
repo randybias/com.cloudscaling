@@ -1,0 +1,70 @@
+---
+author: Randy Bias
+comments: true
+date: 2013-04-17 11:56:00+00:00
+layout: post
+slug: portland13
+title: OpenStack Summit Presentations and Videos
+---
+
+_(UPDATED with new slide embeds)_
+
+Close to 3,000 developers, users, investors, media and analysts descended on the Oregon Convention Center for the [OpenStack Summit] this week. Cloudscaling was there in force, with five presentations, one panel and a raft of [news].
+
+  [OpenStack Summit]: http://www.openstack.org/summit/portland-2013/
+  [news]: http://cloudscaling.com/news-events/
+
+Below, we've summarized each presentation and linked to the slides for many of them. Later, we'll add video and update the post.
+
+[PANEL: Vendor discussion about RAs -&gt; battle for a winner — Randy Bias](http://openstacksummitapril2013.sched.org/event/f75b118404a89ede6f91efb2ff5a83a7#)
+
+## April 16, 1:50 pm
+
+Operations Summit: This was a Design-summit-style technical working session to discuss and refine best practices for deploying and operating OpenStack installations.
+
+[State of the Stack — Randy Bias](http://openstacksummitapril2013.sched.org/event/bda9ee96cffc139b2fc0822f93306448#.UU8vJltAS98)
+
+## April 17, 11:00 am
+
+OpenStack is the fastest growing open source movement in history, but its marketing momentum has largely outrun its technology growth. Why are organizations so eager to embrace OpenStack? Some components – like Swift – are ready for prime time. But others – like Horizon and Quantum – are still evolving. What needs the most attention: networking, storage, compute, or something else? Where are the reference architectures and real world deployments? How are different product and service companies implementing OpenStack in production today? In this preso, we went beyond the hype and dug deep on OpenStack, exploring all that is great and all that needs serious work. Attendees left with a firsthand account of the State of the Stack, ready to help their organizations embrace OpenStack armed with practical knowledge.
+&nbsp;
+
+<iframe style="border: 1px solid #CCC; border-width: 1px 1px 0; margin-bottom: 5px;" src="http://www.slideshare.net/slideshow/embed_code/19014183" height="356" width="427" allowfullscreen="" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+
+[State of the Stack April 2013](http://www.slideshare.net/randybias/state-of-the-stack-april-2013) from [Cloudscaling, Inc.](http://www.slideshare.net/randybias).
+
+[Scale-out Block Storage: There's a Reason AWS EBS Looks the Way it Does — Randy Bias and Eric Windisch](http://openstacksummitapril2013.sched.org/event/fb6544921a45bdf27042724a60e90d49#
+
+
+## April 18, 9:30 am
+
+Existing approaches to delivering persistent block storage in OpenStack focus on integrating existing SAN/NAS hardware solutions, using Distributed File Systems (DFS), or using simple Direct Attached Storage (DAS) with Cinder. There is another alternative: scale-out block storage nodes with intelligent scheduling. This is the same approach that Amazon Web Services (AWS) uses for Elastic Block Storage (EBS) and it's worth taking a close look at the pros and cons. This presentation explored the differences between SAN, NAS, DFS, DAS, and EBS. We looked at the implicit and explicit contracts that users and operators get from the different approaches and at a variety of failure conditions. EBS may not be right for some clouds, but for many it's an important and viable alternative to the existing approaches.
+<b> </b>
+
+<iframe style="border: 1px solid #CCC; border-width: 1px 1px 0; margin-bottom: 5px;" src="http://www.slideshare.net/slideshow/embed_code/19091435" height="356" width="427" allowfullscreen="" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+
+[Scale-Out Block Storage](http://www.slideshare.net/randybias/scale-out-block-storage) from [Cloudscaling, Inc.](http://www.slideshare.net/randybias).
+
+<a href="http://openstacksummitapril2013.sched.org/event/14020a2119c1e055140ad6cbbf2c65cd#">Folsom Security in Review — Matt Joyce</a>
+
+## April 18, 3:20 pm
+
+This talk is a breakdown of security concerns relating to the OpenStack Folsom Release. We looked at past vulnerabilities in Folsom, existing security models, and emerging technologies that will impact those models. The presentation described several deployment models in terms of their security attributes. The next phase will be the discussion of specific protocols in use and their individual security characteristics. Matt presented statistics on where past vulnerabilities have been found and reported, allowing us to consider how we can better address security in our continuous integration processes. The goal of this talk is to present a map of where we are today, and expose some of the issues we have yet to face.
+
+
+<a href="http://openstacksummitapril2013.sched.org/event/98f2d8ca88bbc23cc26be28c7502b0b5#">Networking is NOT Free: Lessons in Network Design — Dan Sneddon</a>
+
+## April 18, 4:10 pm
+
+This presentation is an in-depth critique of the existing OpenStack networking approach, with a focus on how the Nova network controller is more of a hindrance than a help. We discussed the gap in Quantum's functionality required to close the gap, and alternative solutions. How can we make networking in OpenStack robust, high performance, and fault tolerant? What do typical large scale networks look like and what lessons can we learn from them? Is there an approach to networking we can take that is the same with a handful of servers as it is with hundreds of racks?
+
+<iframe style="border: 1px solid #CCC; border-width: 1px 1px 0; margin-bottom: 5px;" src="http://www.slideshare.net/slideshow/embed_code/19111866" height="356" width="427" allowfullscreen="" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+
+[Networking is NOT Free: Lessons in Network Design](http://www.slideshare.net/randybias/networking-is-not-free-lessons-in-network-design) from [Cloudscaling, Inc.](http://www.slideshare.net/randybias).
+
+
+<a href="http://openstacksummitapril2013.sched.org/event/9cc051b1d6bf6eaeea856bbda1460f9f#">Securing OpenStack's Underside: True Computing — Eric Windisch</a>
+
+## April 18, 5:00 pm
+
+There have been a number of premature attempts to provide a trusted computing platform for IaaS software. However, all have met with failure and a lack of mass market adoption. What would be required to solve this problem for real and deliver "true" computing? True computing requires the ability to have a trusted chain of events related to the provisioning and deployment of hardware and software. It requires integration to the supply chain with installation of initial keys at the hardware vendor's site, secure PXE booting, system attestation, and robust key management. None of this is easy or free, but what would it look like if OpenStack could become the first truly trusted cloud system? How would it integrate with the current 'trusted-messaging' blueprint? Would it make CloudAudit's API more relevant?

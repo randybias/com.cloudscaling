@@ -11,6 +11,22 @@ include_pagination: true
 	{% assign currentPage = 1 %}
 {% endif %}
 
+<div class="site-sidebar">
+	<h2>Top Posts</h2>
+	<ul>
+		<li><a href="">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
+		<li><a href="">Aliquam tincidunt mauris eu risus.</a></li>
+		<li><a href="">Vestibulum auctor dapibus neque.</a></li>
+		<li><a href="">Nunc dignissim risus id metus.</a></li>
+		<li><a href="">Cras ornare tristique elit.</a></li>
+		<li><a href="">Vivamus vestibulum nulla nec ante.</a></li>
+		<li><a href="">Praesent placerat risus quis eros.</a></li>
+		<li><a href="">Fusce pellentesque suscipit nibh.</a></li>
+		<li><a href="">Integer vitae libero ac risus egestas placerat.</a></li>
+		<li><a href="">Vestibulum commodo felis quis tortor.</a></li>
+		<li><a href="">Ut aliquam sollicitudin leo.</a></li>
+	</ul>
+</div>
 <div class="site-container" data-page="{{ currentPage }}" data-totalPages="{{ paginator.total_pages }}">
 	{% capture homepage %}{{ page.url | slugify  }}{% endcapture %}
 	<!-- This loops through the paginated posts -->

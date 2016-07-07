@@ -4,21 +4,22 @@
   {% include head.html %}
 
   <body class="{{ page.url | slugify }}">
+  <pre>default.html</pre>
 
     {% include header.html %}
 
     <div class="page-content">
       <div class="wrapper">
-        {{ content }}
+        xxx{{ content }}xxx
       </div>
     </div>
-    
+
     {% if page.include_pagination%}
      {% include pagination.html %}
     {% endif %}
 
     {% include footer.html %}
-    
+
   </body>
 
 </html>

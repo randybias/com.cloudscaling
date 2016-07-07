@@ -3,6 +3,7 @@ layout: single_author
 footer: false
 ---
 
+<pre>author_index.html</pre>
 <div id="blog-archives" class="author">
 
 	{% assign index = true %}
@@ -10,7 +11,7 @@ footer: false
           {% if post.author contains page.author %}
             {% assign content = post.content %}
             {% assign title = post.title %}
-  	     
+
           {% include archive_post.html %}
 
           {% endif %}
