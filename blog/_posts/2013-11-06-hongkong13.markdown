@@ -1,0 +1,66 @@
+---
+author: Randy Bias
+comments: true
+date: 2013-11-06 12:00:00+00:00
+layout: post
+slug: hongkong13
+title: 'OpenStack Summit Presentations & Videos: Hong Kong 2013'
+---
+
+_UPDATED: State of the (Open)Stack added. Scroll.)_
+
+The Hong Kong Summit attracted more than 3,000 developers, users, investors, media and analysts this week. Presentations and panels in which Cloudscalers participated are linked below.
+
+## AWS Repatriation: Bring Your Apps Back
+
+_Nov 5_
+
+Running your own infrastructure *can* be as little as half the cost of running on AWS once you are at scale. OpenStack-based cloud systems can provide the same or similar economies of scale if you leverage the lessons of AWS and GCE when building your cloud. This talk will discuss the economic factors in designing a cost-efficient AWS + OpenStack hybrid cloud. We look at the issues involved in repatriating existing applications, and we show a couple of real-world demonstration of tools that can assist in the repatriation process. Repatriation isn quite as simple as hitting the Easy button, but if you plan your deployment correctly, you can make it work, both technically and economically.
+
+{% youtube MLMiLmHC6bU %}
+
+{% oembed http://www.slideshare.net/slideshow/embed_code/27989411 %}
+
+## State of the (Open)Stack
+
+_Nov 7_
+
+This 2nd major State of the Stack address is a complete refresh of the spring 2013 edition, [broadcast live on BrightTALK](https://www.brighttalk.com/webcast/10353/92159) from the OpenStack Summit in Hong Kong.
+
+Randy Bias, CEO and Co-founder of Cloudscaling examines the progress from Grizzly to Havana and delves into new areas like refstack, tripleO, bare metal server provisioning, the move from "projects" to "programs", and public/hybrid cloud compatibility. Check out the updated statistics on project momentum and look more closely at big upgrades in Havana, including OpenStack Orchestrate (Heat), which has the opportunity to change the game for OpenStack in the greater private and hybrid cloud game. We also discuss the "what is 'core'" debate and examine the idea that OpenStack is a kernel, not a complete cloud OS.
+
+<script type="text/javascript" src="https://www.brighttalk.com/clients/js/embed/embed.js"></script>
+<iframe style="border: 1px solid #CCC; border-width: 1px 1px 0; margin-bottom: 5px;" src="http://www.slideshare.net/slideshow/embed_code/27989302" height="486" width="597" allowfullscreen="" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+
+State of the Stack v2 from [Cloudscaling, Inc.](http://www.slideshare.net/randybias)
+https://www.slideshare.net/randybias/state-of-the-stack-v2
+
+## Best Practices for Delivering DevOps on OpenStack
+
+_Nov 6_
+
+DevOps, is changing how cloud applications and infrastructure is deployed and managed, DevOps aims to speed up process for delivering new features and releases of our applications. OpenStack is a fast growing infrastructure itself. In this panel we discuss the specific challenges for delving DevOps and continues deployment models on-top of an OpenStack infrastructure that is continuously evolving. We've assembled a panel of top industry experts to discuss how we can push updates to our applications without downtime, how we can also update our OpenStack infrastructure as we do that, we learn about the tools and framework available on the OpenStack ecosystem that can help us implement a successful DevOps project. The panel represents Rackspace (Tony Campbell), Cloudscaling (Azmir Mohamed), Scalr (Sebastian Stadil), Canonical (Mark Ramm-Christensen) and Liveperson (Toby Holzer). Nati Shalom (GigaSpaces) led the discussion as moderator.
+
+{% youtube h4G4LwHZAKs %}
+
+
+## Panel on Application Portability
+
+_Nov 7_
+
+It's a multi-cloud world and your code needs to run somewhere. However, the cloud you choose today may not be the cloud you need tomorrow. Changes in reliability, performance, cost, and privacy may drive you to research alternative public clouds, a private cloud, or a hybrid of the two. Considering application portability upfront can be crucial in avoiding lock-in. The tools you use to interact with the cloud will play a large part in how portable your application is between clouds.This panel will discuss the different approaches to application portability, e.g. API compatibility, multi-cloud SDKs, image portability, application architecture portability, etc. Is application portability a myth or reality? What are the pros and cons? Bring your questions to be answered by our panel of experts.
+
+{% youtube ZeciW11lU18 %}
+
+
+## Stack Debate: Understanding OpenStack’s Future
+
+_Nov 8_
+
+Which is more important to the future of OpenStack: A vibrant community of users who collectively steer the project toward features and technologies that matter most to them? Or, is the future of OpenStack best served through a logical series of sound engineering decisions that steer the project toward an architecture that’s ready for a new world of scale-out apps?
+
+In this debate, moderated by Stefano Mafulli, Scott Sanchez and Randy Bias will take point and counterpoint. We’ll discuss the hype growth of OpenStack and debate whether or not the technology has kept up. Participants will hear differing points of view on how projects like Neutron, Iconic, refstack and tripleO are or are not taking OpenStack in the right direction. We’ll look at who is putting OpenStack into production and examine what that means for the larger community.
+
+The debate is designed to draw participants out of their default points of view and challenge them to consider alternatives. As OpenStack continues it rapid growth, a continual re-examination of our thinking is critical.
+
+{% youtube S8Q8ASLQ3t8 %}
