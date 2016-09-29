@@ -23,6 +23,9 @@ Additionally, smaller clouds built with 802.1q-based VLANs may find themselves p
 
 Before exploring the security problem we should quickly explain how 802.1q VLAN tagging works. It's very simple actually. Switches are configured to have separate "virtual networks" for different tenants.  Ethernet frames originating from a particular port or MAC address have a 4-byte header (‘tag’) added which contains a 12-bit VLAN ID.
 
+[![](/assets/media/2013/03/vlan-tagging.png)](/assets/media/2013/03/vlan-tagging.png)
+
+
 The switch fabric is then smart about restricting the forwarding of that Ethernet frame to only other computers on the same virtual network.  This, in effect, provides basic network partitioning and is the de facto way in which different applications and datacenter tenants are isolated in most enterprise datacenters today.
 
 This technique has worked for a long time now and has been mostly secure due to a [security through obscurity](http://en.wikipedia.org/wiki/Security_through_obscurity) benefit: attacker or hacker access to the switch fabric is very difficult as most of the switch operating system code is closed source and highly proprietary.
@@ -44,6 +47,8 @@ It's an incredibly dire kind of breach where your entire cloud network is compro
 There is really only one approach that can be used to try and harden your switch fabric against a malicious attacker who has access to a hypervisor and it's vSwitch, but it isn't very robust and takes a level of sophistication and automation that doesn't exist in most clouds today.  Basically, once you trust the hypervisor switch, all bets are off if an attacker gains access.
 
 The primary defense is to configure your physical switch fabric in such a way that VLAN tags are restricted.  In effect, it's a way to filter out unexpected VLAN tags from presumably untrustable hypervisors.  For example, if you say that VLANs 10, 20, 300, and 435 are on this port, ignore all other VLANs, you can restrict the attacker's access to just those four VLANs.
+
+[![](/assets/media/2013/03/restrict-vlan-tags.png)](/assets/media/2013/03/restrict-vlan-tags.png)
 
 Unfortunately, in a multi-tenant infrastructure cloud environment you don't know in advance which VLANs will be where or which tenants will be assigned to which VLANs.  It's a very dynamic environment.  This means that as part of the network provisioning process you would have to dynamically reconfigure your switch fabric every time you place a new VM.  This is exceptionally difficult and I know of very few who have been wildly successful at doing this.  I know of zero who have done it in a vendor neutral manner.
 
